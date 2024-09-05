@@ -10,7 +10,7 @@ function App() {
         <h1>Profile Picture</h1>
         <img src={ProfileImage} alt="Profile" style={{ width: "200px", borderRadius: "10px" }} />
       </div>
-      <Profile/>
+      <Profile />
     </div>
   );
 }
