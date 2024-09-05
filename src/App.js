@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import React from "react";
+import Profile from "./component/Profile";
 import './App.css';
+import ProfileImage from './images/wonwoo.jpeg'; 
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <h1>Profile Picture</h1>
+        <img src={ProfileImage} alt="Profile" style={{ width: "200px", borderRadius: "10px" }} />
+      </div>
+      <Profile/>
     </div>
   );
 }
